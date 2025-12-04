@@ -8,12 +8,16 @@ import numpydoc_test_module
 
 extensions = [
     "sphinx.ext.autodoc",
+    'sphinx.ext.autosummary',
     "sphinx.ext.intersphinx",
     "numpydoc",
 ]
 project = "numpydoc_test_module"
 autosummary_generate = True
 autodoc_default_options = {"inherited-members": None}
+
+# autodoc_use_legacy_class_based=True
+
 source_suffix = ".rst"
 exclude_patterns = ["_build"]
 intersphinx_mapping = {

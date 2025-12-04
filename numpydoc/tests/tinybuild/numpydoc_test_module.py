@@ -19,45 +19,14 @@ __all__ = ["MyClass", "my_function"]
 
 
 class MyClass:
-    """A class.
+    """A class."""
 
-    Reference [2]_
-
-    Parameters
-    ----------
-    *args : iterable
-        Arguments.
-    **kwargs : dict
-        Keyword arguments.
-
-    References
-    ----------
-    .. [2] https://numpydoc.readthedocs.io
-    """
+    thisown = property(lambda x: True, lambda x, v: True, doc="The membership flag")
 
     def example(self, x):
         """Example method."""
 
 
 def my_function(*args, **kwargs):
-    """Return None.
-
-    See [3]_.
-
-    Parameters
-    ----------
-    *args : iterable
-        Arguments.
-    **kwargs : dict
-        Keyword arguments.
-
-    Returns
-    -------
-    out : None
-        The output.
-
-    References
-    ----------
-    .. [3] https://numpydoc.readthedocs.io
-    """
+    """Return None."""
     return
